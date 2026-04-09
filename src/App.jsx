@@ -179,9 +179,12 @@ const HandDrawnPortfolio = () => {
     <div className="theme-handdrawn relative">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-40 bg-[#fdfbf7]/90 backdrop-blur px-6 py-4 flex justify-between items-center border-b-2 border-dashed border-[#e5e0d8]">
-        <a href="#" onClick={handleSmoothScroll} className="font-kalam text-2xl flex items-center gap-2 text-[#ff4d4d] hover:opacity-80 transition-opacity">
-          <Star className="stroke-[3px]" size={24} />
-          <span className="text-[#2d2d2d]">Ojaswa.Dev</span>
+        <a href="#" onClick={handleSmoothScroll} className="font-kalam text-3xl flex items-center group hover:-rotate-2 transition-transform duration-300">
+          <div className="relative">
+            <span className="text-[#2d2d2d] z-10 relative">Ojaswa</span>
+            <span className="absolute bottom-1 left-0 w-full h-[8px] bg-[#ff4d4d]/30 -rotate-2 z-0 rounded-full group-hover:bg-[#f9a826]/50 transition-colors"></span>
+          </div>
+          <span className="text-[#2d5da1] ml-1 animate-pulse">.</span>
         </a>
         <div className="hidden sm:flex gap-8 text-xl">
           <a href="#about-hd" onClick={handleSmoothScroll} className="hover:text-[#ff4d4d] hover:-translate-y-1 transition-transform decoration-wavy underline-offset-4 hover:underline">About</a>
@@ -421,9 +424,9 @@ const BrutalistPortfolio = () => {
     <div className="theme-brutalist relative selection:bg-[#FFD93D] selection:text-black">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-40 bg-[#FFFDF5] border-b-4 border-black px-4 py-4 sm:px-8 flex justify-between items-center shadow-[0px_4px_0px_0px_#000]">
-        <a href="#" onClick={handleSmoothScroll} className="font-black text-xl sm:text-2xl uppercase tracking-tighter flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <Star className="fill-black" size={24} />
-          <span>Ojaswa.Dev</span>
+        <a href="#" onClick={handleSmoothScroll} className="font-black text-2xl sm:text-3xl uppercase tracking-tighter flex items-center gap-1 group hover:scale-105 transition-transform duration-200">
+          <span className="bg-black text-white px-2 py-0 border-2 border-black rotate-2 group-hover:-rotate-2 transition-transform shadow-[2px_2px_0px_0px_#FF6B6B]">OJAS</span>
+          <span className="bg-[#FFD93D] text-black px-2 py-0 -rotate-2 border-2 border-black group-hover:rotate-2 transition-transform shadow-[2px_2px_0px_0px_#000]">WA.</span>
         </a>
         <div className="hidden sm:flex gap-4">
           <a href="#about" onClick={handleSmoothScroll} className="font-bold text-lg hover:bg-[#FFD93D] px-2 py-1 border-2 border-transparent hover:border-black transition-all">About</a>
